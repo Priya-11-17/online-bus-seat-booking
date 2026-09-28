@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    padding: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bus-info {
+    background: #eef4ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.bus-info p {
+    margin: 5px 0;
+}
+
+.bus {
+    background: #e8e8e8;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.driver {
+    background: #333;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.seat {
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #bde0fe;
+}
+
+.seat:hover {
+    transform: scale(1.05);
+}
+
+.seat.selected {
+    background: #4caf50;
+    color: white;
+}
+
+.seat.booked {
+    background: #777;
+    color: white;
+    cursor: not-allowed;
+}
+
+.legend {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legend i {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.available {
+    background: #bde0fe;
+}
+
+.selected {
+    background: #4caf50;
+}
+
+.booked {
+    background: #777;
+}
+
+.booking {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.booking p {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+#bookButton {
+    width: 100%;
+    padding: 12px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#bookButton:hover {
+    background: #125ca8;
+}

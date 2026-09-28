@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Bus Seat Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚌 Online Bus Seat Booking</h1>
+
+        <div class="bus-info">
+            <p><strong>Route:</strong> Bangalore → Mangalore</p>
+            <p><strong>Price:</strong> ₹500 per seat</p>
+        </div>
+
+        <div class="bus">
+
+            <div class="driver">
+                🚍 Driver
+            </div>
+
+            <div class="seats" id="seats"></div>
+
+        </div>
+
+        <div class="legend">
+            <span><i class="available"></i> Available</span>
+            <span><i class="selected"></i> Selected</span>
+            <span><i class="booked"></i> Booked</span>
+        </div>
+
+        <div class="booking">
+
+            <h2>Booking Details</h2>
+
+            <p>
+                Selected Seats:
+                <span id="selectedSeats">None</span>
+            </p>
+
+            <p>
+                Total Amount:
+                ₹<span id="totalAmount">0</span>
+            </p>
+
+            <button id="bookButton">
+                Book Now
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
